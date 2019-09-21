@@ -1,0 +1,133 @@
+:root {
+    --main-color: #4AAAA5;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url(../img/papyrus.png);
+    background-repeat: repeat;
+}
+
+.navbar {
+    border-bottom: 2px solid #dddddd;
+    background: #fff;
+}
+
+.navbar-brand {
+    background: #4AAAA5;
+    color: white !important;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Georgia', Times, 'Times New Roman', serif !important;
+}
+
+.nav-item {
+    padding: 0 15px;
+    border-right: 1px solid lightgray;
+}
+
+.nav-item:last-of-type{
+    border-right: none;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.content {
+    background: #fff;
+    margin: 40px auto 100px;
+    padding: 30px 25px;
+}
+
+p{
+    line-height: 2;
+}
+
+h1 {
+    margin-top: 0;
+    color: var(--main-color);
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #666666;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    border-top: 8px solid var(--main-color);
+    padding: 30px 0 10px;
+}
+
+footer p{
+    font-size: 11px;
+    margin: 0;
+    color: lightgray;
+
+}
+
+.portfolio-item {
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    background-image: url(../img/item1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 30px 30px 0;
+}
+
+.portfolio-item p {
+    color: #fff;
+    background: var(--main-color);
+    position: absolute;
+    bottom: 5px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#submit {
+    color: #fff;
+    background: var(--main-color);
+    padding: 10px 35px;
+    margin-top: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 768px){
+    .nav-item {
+        border: 0;
+        margin-top: 15px;
+    }
+
+    .nav-item:last-child{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #portfolio-img {
+        float: none !important;
+        display: block;
+        margin: 0 auto 10px auto !important;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .portfolio-item {
+        margin: 0 0 20px;
+    }
+}
